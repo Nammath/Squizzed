@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -24,6 +25,7 @@ namespace Squizzed
         public static int cardNumber = 0;
         public static int gameNumber = 0;
         public static Score score = new Score();
+        
 
         public MainWindow()
         {

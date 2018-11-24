@@ -13,6 +13,8 @@
 		<CommandBinding Command="app:Commands.DeleteCard" Executed="DeleteCard_Executed" CanExecute="DeleteCard_CanExecute"/>
 	</Page.CommandBindings>
 
+	
+
     <Grid>
 		<Grid.ColumnDefinitions>
 			<ColumnDefinition></ColumnDefinition>
@@ -32,8 +34,8 @@
 				<RowDefinition></RowDefinition>
 			</Grid.RowDefinitions>
 			<Button Click="addCard">Dodaj kartę</Button>
-			<Button Grid.Row="1" Command="app:Commands.DeleteCard">Usuń kartę</Button>
-			<Button Grid.Row="2" Command="app:Commands.EditCard">Edytuj kartę</Button>
+			<Button Grid.Row="1" Command="app:Commands.DeleteCard" Click="deleteCard">Usuń kartę</Button>
+			<Button Grid.Row="2" Command="app:Commands.EditCard" Click="editCard">Edytuj kartę</Button>
 			<Button Grid.Row="3" Click="returnToMenu">Wyjdź</Button>
 		</Grid>
     </Grid>

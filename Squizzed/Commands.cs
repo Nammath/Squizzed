@@ -14,5 +14,6 @@ namespace Squizzed
         public static RoutedUICommand AddCard = new RoutedUICommand("Add card", "Add", typeof(Commands));
         public static RoutedUICommand EditCard = new RoutedUICommand("Edit card", "Edit", typeof(Commands));
         public static RoutedUICommand DeleteCard = new RoutedUICommand("Delete card", "Delete", typeof(Commands));
+        public static RoutedUICommand DeleteCardFromDeck = new RoutedUICommand("Delete card from deck", "Delete", typeof(Commands));
     }
 }

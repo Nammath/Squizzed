@@ -26,3 +26,5 @@ C:\Users\Daniel\documents\visual studio 2017\Projects\Squizzed\Squizzed\obj\Debu
 C:\Users\Daniel\documents\visual studio 2017\Projects\Squizzed\Squizzed\obj\Debug\editCardPage.baml
 C:\Users\Daniel\documents\visual studio 2017\Projects\Squizzed\Squizzed\obj\Debug\EndGamePage.g.cs
 C:\Users\Daniel\documents\visual studio 2017\Projects\Squizzed\Squizzed\obj\Debug\EndGamePage.baml
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\Squizzed\Squizzed\obj\Debug\deleteCardPage.g.cs
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\Squizzed\Squizzed\obj\Debug\deleteCardPage.baml

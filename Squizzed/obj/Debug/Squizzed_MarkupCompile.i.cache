@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Daniel\documents\visual studio 2017\Projects\Squizzed\Squizzed\obj\Debug\
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\Squizzed\Squizzed\obj\Debug\
 Squizzed
 none
 false
 DEBUG;TRACE
-C:\Users\Daniel\documents\visual studio 2017\Projects\Squizzed\Squizzed\App.xaml
-8-1965542556
+C:\Users\Daniel\Documents\Visual Studio 2017\Projects\Squizzed\Squizzed\App.xaml
+91562205763
 
-21-809008740
+22-431818420
 13738642453
-addCardPage.xaml;Collection.xaml;editCardPage.xaml;EndGamePage.xaml;MainWindow.xaml;Menu.xaml;Options.xaml;Play.xaml;
+addCardPage.xaml;Collection.xaml;deleteCardPage.xaml;editCardPage.xaml;EndGamePage.xaml;MainWindow.xaml;Menu.xaml;Options.xaml;Play.xaml;
 
-True
+False
 

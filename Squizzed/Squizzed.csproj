@@ -58,6 +58,9 @@
       <DependentUpon>addCardPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Commands.cs" />
+    <Compile Include="deleteCardPage.xaml.cs">
+      <DependentUpon>deleteCardPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="editCardPage.xaml.cs">
       <DependentUpon>editCardPage.xaml</DependentUpon>
     </Compile>
@@ -70,6 +73,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Collection.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="deleteCardPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

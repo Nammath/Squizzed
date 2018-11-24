@@ -58,5 +58,13 @@ namespace Squizzed
             if (MainWindow.cardNumber == 0) { e.CanExecute = false; }
             else { e.CanExecute = true; }
         }
+        private void editCard(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new editCardPage());
+        }
+        private void deleteCard(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new deleteCardPage());
+        }
     }
 }

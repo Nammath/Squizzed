@@ -1,0 +1,39 @@
+﻿<Page x:Class="Squizzed.deleteCardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	  xmlns:app="clr-namespace:Squizzed"
+      xmlns:local="clr-namespace:Squizzed"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="deleteCardPage">
+	<Page.CommandBindings>
+		<CommandBinding Command="app:Commands.DeleteCardFromDeck" CanExecute="CommandBinding_CanExecute" Executed="CommandBinding_Executed"/>
+	</Page.CommandBindings>
+
+    <Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition/>
+			<ColumnDefinition/>
+		</Grid.ColumnDefinitions>
+		<ListBox Name="cardsListBox" SelectionChanged="cardsListBox_SelectionChanged">
+
+		</ListBox>
+		<Grid Grid.Column="1">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="5*"/>
+				<RowDefinition/>
+			</Grid.RowDefinitions>
+			<Grid Grid.Row="1">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="2*"/>
+					<ColumnDefinition/>
+					<ColumnDefinition/>
+				</Grid.ColumnDefinitions>
+				<Button Click="Back_Click" Margin="10 30 10 30" Grid.Column="1">Cofnij</Button>
+				<Button Click="Delete_Click" Margin="10 30 10 30" Grid.Column="2" Command="app:Commands.DeleteCardFromDeck">Usuń</Button>
+			</Grid>
+		</Grid>
+	</Grid>
+</Page>
