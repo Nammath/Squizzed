@@ -1,0 +1,87 @@
+﻿<Page x:Class="Squizzed.addCardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+	  xmlns:app="clr-namespace:Squizzed"
+      xmlns:local="clr-namespace:Squizzed"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="addCardPage">
+	<Page.CommandBindings>
+		<CommandBinding Command="app:Commands.AddCard" Executed="AddCard_Executed" CanExecute="AddCard_CanExecute"/>
+	</Page.CommandBindings>
+
+    <Grid>
+		<Grid.ColumnDefinitions>
+			
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+			<RowDefinition Height="auto"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Grid Grid.Row="0">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="auto"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<Label>Pytanie: </Label>
+			<TextBox Grid.Column="1" Name="questionTextBox"></TextBox>
+		</Grid>
+		<Grid Grid.Row="1">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="auto"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<Label>Odpowiedź 1:</Label>
+			<TextBox Name="answerOne" Grid.Column="1"></TextBox>
+			<RadioButton GroupName="answerRadio" Grid.Column="2" Name="firstRadio">Poprawna</RadioButton>
+			
+		</Grid>
+		<Grid Grid.Row="2">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="auto"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<Label>Odpowiedź 2:</Label>
+			<TextBox Name="answerTwo" Grid.Column="1"></TextBox>
+			<RadioButton GroupName="answerRadio" Grid.Column="2" Name="secondRadio">Poprawna</RadioButton>
+
+		</Grid>
+		<Grid Grid.Row="3">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="auto"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<Label>Odpowiedź 3:</Label>
+			<TextBox Name="answerThree" Grid.Column="1"></TextBox>
+			<RadioButton GroupName="answerRadio" Grid.Column="2" Name="thirdRadio">Poprawna</RadioButton>
+
+		</Grid>
+		<Grid Grid.Row="4">
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="auto"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+				<ColumnDefinition Width="*"></ColumnDefinition>
+			</Grid.ColumnDefinitions>
+			<Label>Odpowiedź 4:</Label>
+			<TextBox Name="answerFour" Grid.Column="1"></TextBox>
+			<RadioButton GroupName="answerRadio" Grid.Column="2" Name="fourthRadio">Poprawna</RadioButton>
+
+		</Grid>
+		<Grid Grid.Row="5">
+			<Button Click="sendAnswer" Padding="5" Command="app:Commands.AddCard">Wyślij</Button>
+		</Grid>
+		<Grid Grid.Row="6">
+			<Button Click="goBack" Padding="5">Wróć</Button>
+		</Grid>
+	</Grid>
+</Page>

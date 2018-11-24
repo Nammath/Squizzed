@@ -1,0 +1,40 @@
+﻿<Page x:Class="Squizzed.Options"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Squizzed"
+	  xmlns:app="clr-namespace:Squizzed"
+      mc:Ignorable="d" 
+      d:DesignHeight="720" d:DesignWidth="1280"
+      Title="Options">
+	<Page.CommandBindings>
+		<CommandBinding Command="app:Commands.EditCard" Executed="EditCard_Executed" CanExecute="EditCard_CanExecute"/>
+		<CommandBinding Command="app:Commands.DeleteCard" Executed="DeleteCard_Executed" CanExecute="DeleteCard_CanExecute"/>
+	</Page.CommandBindings>
+
+    <Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+			<ColumnDefinition></ColumnDefinition>
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition></RowDefinition>
+			<RowDefinition></RowDefinition>
+			<RowDefinition Height="2*"></RowDefinition>
+		</Grid.RowDefinitions>
+		<Grid Grid.Column="1" Grid.Row="2">
+			<Grid.RowDefinitions>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+				<RowDefinition></RowDefinition>
+			</Grid.RowDefinitions>
+			<Button Click="addCard">Dodaj kartę</Button>
+			<Button Grid.Row="1" Command="app:Commands.DeleteCard">Usuń kartę</Button>
+			<Button Grid.Row="2" Command="app:Commands.EditCard">Edytuj kartę</Button>
+			<Button Grid.Row="3" Click="returnToMenu">Wyjdź</Button>
+		</Grid>
+    </Grid>
+</Page>
